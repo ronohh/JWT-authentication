@@ -1,6 +1,8 @@
 //this is going to akkow us to make rest request API TO UR aAPI
 
 GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZGFuaWVscyIsImlhdCI6MTc4MzA2NTczOX0.zRTVhWvQH8N8uNzMT61nDwJ2bsBnkf83x20koCrXhUE
+
 
 ###
 
@@ -8,5 +10,5 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "username": "jack"
+    "username": "daniels"
 }
