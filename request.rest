@@ -1,14 +1,26 @@
 //this is going to akkow us to make rest request API TO UR aAPI
 
 GET http://localhost:3000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZGFuaWVscyIsImlhdCI6MTc4MzA2NTczOX0.zRTVhWvQH8N8uNzMT61nDwJ2bsBnkf83x20koCrXhUE
-
-
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamFjayIsImlhdCI6MTc4MzA3MjMxMSwiZXhwIjoxNzgzMDcyMzcxfQ.9t79akYns8foBFWZchXp2YLW2cYR_PhKrEqwwZJm_ng"
 ###
 
-POST http://localhost:3000/login
+POST http://localhost:4000/token
+Content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamFjayIsImlhdCI6MTc4MzA3MDU0MH0.kW9LmRjsUjgNIeXvo47g7ONKALEiQ14g9cKoP-Q0XRA"
+}
+###
+
+POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-    "username": "daniels"
+    "username": "jack"
+}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+{
+    "token": ""
 }
